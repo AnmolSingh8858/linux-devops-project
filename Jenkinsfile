@@ -18,7 +18,7 @@ pipeline {
             steps {
                 // Agar container pehle se run ho raha ho, stop & remove karo
                 sh 'docker rm -f linux-devops-app || true'
-                sh 'docker run -d --name linux-devops-app -p 8080:3000 linux-devops-app'
+                sh 'docker run -d --name linux-devops-app -p 9090:3000 linux-devops-app'
             }
         }
     }
